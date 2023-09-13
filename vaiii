@@ -1,0 +1,120 @@
+#include <stdio.h>
+
+int main(int argc, char **argv)
+{   //bai1
+    /*
+    int a,b;
+    printf("nhap so nguyen a: ");
+    scanf("%d", &a);
+    printf("nhap so nguyen b: ");
+    scanf("%d", &b);
+    if ( a > b) {
+        printf("\n so lon nhat la: %d", a);
+        printf("\n so be nhat la : %d", b);
+    } else {
+        printf("\n so lon nhat la: %d", b);
+        printf("\n so be nhat la : %d\n", a);
+        
+    }
+    getchar();
+    */
+    //bai 2
+    /*
+    float x,y;
+    printf("nhap vao so x: ");
+    scanf("%f", &x);
+    printf("nhap vao so y: ");
+    scanf("%f", &y);
+    if (y==0) {
+        printf("deo chia duoc");
+    }else {
+            printf("ket qua cua phep chia la: %f", x/y);
+        }
+    */
+    int a1,a2,a3,a4;
+    printf("nhap vao so a1");
+    scanf("%d", &a1);
+    printf("nhap vao so a2");
+    scanf("%d", &a2);
+    printf("nhap vao so a3");
+    scanf("%d", &a3);
+    printf("nhap vao so a4");
+    scanf("%d", &a4);
+    if (a1>a2>a3>a4) {
+    printf("so nguyen lon nhat la: %d",a1);
+    printf("\nso nguyen be nhat la: %d",a4); }
+    else if (a1>a3>a2>a4) {
+    printf("so nguyen lon nhat la: %d",a1);
+    printf("\nso nguyen be nhat la: %d",a4); }
+    else if (a1>a2>a4>a3) {
+    printf("so nguyen lon nhat la: %d",a1);
+    printf("\nso nguyen be nhat la: %d",a3); }
+    else if (a1>a4>a2>a3) {
+    printf("so nguyen lon nhat la: %d",a1);
+    printf("\nso nguyen be nhat la: %d",a3); }
+    else if (a1>a3>a4>a2) {
+    printf("so nguyen lon nhat la: %d",a1);
+    printf("\nso nguyen be nhat la: %d",a2); }
+    else if (a1>a4>a3>a2) 
+    printf("so nguyen lon nhat la: %d",a1);
+    printf("\nso nguyen be nhat la: %d",a2); }
+    else if (a2>a1>a3>a4) {
+    printf("so nguyen lon nhat la: %d",a2);
+    printf("\nso nguyen be nhat la: %d",a4); }
+    else if (a2>a3>a1>a4) {
+    printf("so nguyen lon nhat la: %d",a2);
+    printf("\nso nguyen be nhat la: %d",a4); }
+    else if (a2>a1>a4>a3) {
+    printf("so nguyen lon nhat la: %d",a2);
+    printf("\nso nguyen be nhat la: %d",a3); }
+    else if (a2>a4>a1>a3) {
+    printf("so nguyen lon nhat la: %d",a2);
+    printf("\nso nguyen be nhat la: %d",a3); }
+    else if (a2>a3>a4>a1) {
+    printf("so nguyen lon nhat la: %d",a2);
+    printf("\nso nguyen be nhat la: %d",a1); }
+    else if (a2>a4>a3>a1) {
+    printf("so nguyen lon nhat la: %d",a2);
+    printf("\nso nguyen be nhat la: %d",a1); }
+    else if (a3>a2>a1>a4) {
+    printf("so nguyen lon nhat la: %d",a3);
+    printf("\nso nguyen be nhat la: %d",a4); }
+    else if (a3>a1>a2>a4) {
+    printf("so nguyen lon nhat la: %d",a3);
+    printf("\nso nguyen be nhat la: %d",a4); }
+    else if (a3>a2>a4>a1) {
+    printf("so nguyen lon nhat la: %d",a3);
+    printf("\nso nguyen be nhat la: %d",a1); }
+    else if (a3>a4>a2>a1) {
+    printf("so nguyen lon nhat la: %d",a3);
+    printf("\nso nguyen be nhat la: %d",a1); }
+    else if (a3>a1>a4>a2) {
+    printf("so nguyen lon nhat la: %d",a3);
+    printf("\nso nguyen be nhat la: %d",a2); }
+    else if (a3>a4>a1>a2) {
+    printf("so nguyen lon nhat la: %d",a3);
+    printf("\nso nguyen be nhat la: %d",a2); }
+    else if (a4>a2>a3>a1) {
+    printf("so nguyen lon nhat la: %d",a4);
+    printf("\nso nguyen be nhat la: %d",a1); }
+    else if (a4>a3>a2>a1) {
+    printf("so nguyen lon nhat la: %d",a4);
+    printf("\nso nguyen be nhat la: %d",a1); }
+    else if (a4>a2>a1>a3) {
+    printf("so nguyen lon nhat la: %d",a4);
+    printf("\nso nguyen be nhat la: %d",a3); }
+    else if (a4>a1>a2>a3) {
+    printf("so nguyen lon nhat la: %d",a4);
+    printf("\nso nguyen be nhat la: %d",a3); }
+    else if (a4>a3>a1>a2) {
+    printf("so nguyen lon nhat la: %d",a4);
+    printf("\nso nguyen be nhat la: %d",a2); }
+    else (a4>a1>a3>a2); {
+    printf("so nguyen lon nhat la: %d",a4);
+    printf("\nso nguyen be nhat la: %d",a2); }
+    
+      getchar();
+    
+	return 0;
+}
+    

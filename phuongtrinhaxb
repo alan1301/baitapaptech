@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main(int argc, char **argv)
+{
+	float a,b;
+    printf("nhap vao gia tri a: ");
+    scanf("%f", &a);
+    printf("nhap vao gia tri b: ");
+    scanf("%f", &b);
+    if (a == 0) {
+    printf("phuong trinh vo nghiem\n");}
+        else {
+            printf(" gia tri cua x la: %f\n", -b/a);
+        }
+        getchar();
+	return 0;
+}
