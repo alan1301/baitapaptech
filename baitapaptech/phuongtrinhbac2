@@ -1,0 +1,27 @@
+#include <stdio.h>
+#include<math.h>
+
+int main(int argc, char **argv)
+{   float a,b,c,delta,tucuadelta1,tucuadelta2;
+    printf("nhap vao so nguyen a ( a khac 0 ): ");
+    scanf("%f", &a);
+    printf("nhap vao so nguyen b: ");
+    scanf("%f", &b);
+    printf("nhap vao so nguyen c: ");
+    scanf("%f", &c);
+    delta=b*b-4*a*c;
+    tucuadelta1= -b+ sqrt(delta);
+    tucuadelta2= -b- sqrt(delta);
+    if (a==0) {
+    printf("phuong trinh khong thoa man dieu kien");}
+        else {
+        if (delta < 0 ) {
+        printf("vo nghiem roi m oi\n");}
+        else if ( delta == 0 ) {
+        printf(" phuong trinh co nghiem kep x1=x2= %f\n" , -b/2*a);}
+        else {
+            printf(" phuong trinh co hai nghiem phan biet x1=%f \nx2= %f\n", tucuadelta1/2*a, tucuadelta2/2*a);
+        }}
+	getchar();
+	return 0;
+}
