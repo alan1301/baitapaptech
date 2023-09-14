@@ -1,0 +1,80 @@
+#include <stdio.h>
+#include<math.h>
+
+int main(int argc, char **argv)
+{//Bai 1
+    /*
+    int n,tong,i;
+    i=1;
+    tong=0;
+    printf("nhap vao so tu nhien n:");
+    scanf("%d", &n);
+
+    for (i=1; i <=n; i++) {
+        tong = tong + i;
+    }
+    printf("tong cua day S=1+2+...+%d la: %d\n",n,tong);
+    getchar();
+     */
+     //Bai 2
+     /*
+     int n;
+     long S=0;
+  printf("\nNhập vào số n: ");
+  scanf("%d", &n);
+  for(int i = 1; i <= n; i++)
+  {
+    S = S + i * i;
+  }
+  printf("\nTổng 1^2 + 2^2 + ... + %d^2 là: %ld", n, S);
+   */
+   //Bai 3
+   /*
+   int n,i;
+   long S = 0;
+   printf("nhap so nguyen n: ");
+   scanf("%d", &n);
+   
+   for (i = 1; i <= n; i++) {
+       S = i / i;
+   }
+   printf(" tong cua day so la : %ld\n",S);
+     getchar();
+      */
+      //Bai 4
+      /*
+      int n;
+  float S;
+  S = 0;
+  do
+  {
+     printf("\nNhập vào số n: ");
+     scanf("%d", &n);
+     if(n < 1) {
+        printf("\nSố n phải lớn hơn hoặc bằng 1, vui lòng nhập lại !");
+     }
+  }while(n < 1);
+  for(int i = 1; i <= n; i++){
+  S = S + 1.0 / (2 * i);}
+  printf("\nTổng 1/2 + 1/4 + ... + 1/%d là: %.2f\n",n * 2, S);
+   */
+   //Bai5 : Tính S(n) = 1 + 1/3 + 1/5 + … + 1/(2n + 1)
+   /*
+   int n;
+   float S;
+   S = 0;
+   do {
+       printf("nhap vao so nguyen n: ");
+       scanf("%d" &n);
+       if ( n < 1 ) {
+       printf(" ngu vl phai nhap so lon hon 1");}
+       } while (n > 1) ;
+       for ( int i = 1; i <= n ; i++) {
+           S = S + 1.0 / ( 2*i+1);
+       }
+       printf(" tong cua day so la : %f ", S);
+    */
+    getchar();
+     
+	return 0;
+  }
