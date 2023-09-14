@@ -1,0 +1,37 @@
+#include <stdio.h>
+#include<math.h>
+
+int main(int argc, char **argv) {
+    int a1,a2,b1,b2,c1,c2;
+    float x,y,D,Dx,Dy;
+    printf("he phuong trinh \na1*x+b1*y=c1\na2*x+b2*y=c2\n");
+    printf("nhap so nguyen a1: ");
+    scanf("%d", &a1);
+    printf("nhap so nguyen a2: ");
+    scanf("%d", &a2);
+    printf("nhap so nguyen b1: ");
+    scanf("%d", &b1);
+    printf("nhap so nguyen b2: ");
+    scanf("%d", &b2);
+    printf("nhap so nguyen c1: ");
+    scanf("%d", &c1);
+    printf("nhap so nguyen c2: ");
+    scanf("%d", &c2);
+    D= (a1*b2)-(a2*b1);
+    Dx= (c1*c2)-(c2*c1);
+    Dy= (a1*c2)-(a2*c1);
+    if ( D == 0) {
+        if ( Dx+Dy == 0) {
+        printf(" phuong trinh co vo so nghiem\n");}
+            else 
+    printf(" phuong trinh vo nghiem \n");}
+    
+    if ( D != 0) {
+        x= Dx/D;
+        y= Dy/D;
+    printf(" phuong trinh co cap nghiem phan biet (x,y) la : (%f.3,%f.3)\n",x,y);}
+    
+      getchar();
+     
+	return 0;
+}
