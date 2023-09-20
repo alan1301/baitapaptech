@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main () {
+    int *p;
+    int tong = 0;
+    int i;
+    p = (int *) calloc(10, sizeof(int));
+    for (i = 0; i < 10; i++) {
+        printf("nhap vao p[%d]= ",i);
+        scanf("%d" , &p[i]);
+    }
+    
+    for( i = 0; i < 10;i++){
+    if ( p[i] % 2 == 0) {
+        tong += p[i];
+    }}
+    printf("tong cua day so la: %d\n",tong);
+    getchar();
+    return 0;
+}
