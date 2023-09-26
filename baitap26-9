@@ -1,0 +1,82 @@
+#include <stdio.h>
+#include <stdlib.h>
+int N;
+int tichgiaithua = 1;
+int tong = 0;
+void showmenu() {
+    printf("\n1.nhap so nguyen N: ");
+    printf("\n2.Tinh giai thua");
+    printf("\n3.Tinh tong tu 1 den n: ");
+    printf("\n4.so sanh N! voi tong N: ");
+    printf("\n5. Thoat! ");
+    printf("\nChon: ");
+}
+void songuyen () {
+    printf("nhap N ");
+    scanf("%d", &N);
+}
+void giaithua () {
+    for ( int i = 1; i <= N; i++) {
+        tichgiaithua *= i;
+    }
+      printf("giai thua cua N la: %d\n",tichgiaithua);
+}
+
+void tongg() {
+    for ( int i = 0; i <= N; i++) {
+        tong += i;
+    }
+      printf("tongcua N la: %d\n",tong);
+}
+
+void sosanh(){
+    if ( tong > tichgiaithua ) {
+        printf(" tong lon hon tich \n");
+    }
+        if ( tong == tichgiaithua ) {
+        printf(" tong bang tich \n");
+    }
+        if ( tong < tichgiaithua ) {
+        printf(" tong be hon tich \n");
+    }
+}
+
+int main(int argc, char **argv)
+{   int choose;
+    
+    do {
+        showmenu();
+        
+        fflush(stdin); fflush(stdout);
+        scanf("%d", &choose);
+        switch (choose){
+            case 1: {
+                songuyen();
+                break;
+            }
+            case 2: {
+                giaithua();
+                break;
+            }
+            case 3: {
+                tongg();
+                break;
+            }
+            case 4: {
+                sosanh();
+                break;
+            }
+            case 5: {
+                printf("Thoat \n");
+                break;
+            }
+            default: {
+                printf("nhap sai\n");
+                break;
+            }
+        }
+    } while ( choose != 5);
+    getchar();
+	
+	return 0;
+}
